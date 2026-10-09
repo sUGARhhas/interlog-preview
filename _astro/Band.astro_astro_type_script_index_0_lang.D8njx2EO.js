@@ -1,0 +1,1 @@
+import{t as e}from"./scroll.BBYlv5jM.js";document.querySelectorAll(`[data-band]`).forEach(t=>{let n=t.querySelector(`.band-rail`);e(e=>n.style.setProperty(`--p`,e.toFixed(4)),{target:t,offset:[`start end`,`end start`]})});
