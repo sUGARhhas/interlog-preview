@@ -1,0 +1,1 @@
+import{t as e}from"./scroll.BBYlv5jM.js";var t=document.querySelector(`[data-process]`),n=[...t.querySelectorAll(`[data-step]`)],r=e=>{t.style.setProperty(`--p`,e.toFixed(4));for(let t=0;t<n.length;t++)n[t].classList.toggle(`is-on`,e>=t/(n.length-1)-.02)};e(e=>r(e),{target:t,offset:[`start 70%`,`end 70%`]});
