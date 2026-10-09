@@ -4,14 +4,7 @@
       document.documentElement.classList.add('motion');
       // Safari до iOS 15.4 не знает Object.hasOwn, а библиотеки анимаций им пользуются.
       if (!Object.hasOwn) Object.hasOwn = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
-      // Переход между страницами: на новой странице поезд ставим за правым краем, и браузер
-      // сам проводит его через весь экран из старого положения (за левым краем).
-      addEventListener('pagereveal', (e) => {
-        if (!e.viewTransition) return;
-        document.documentElement.classList.add('vt-arrive');
-        e.viewTransition.finished.finally(() => document.documentElement.classList.remove('vt-arrive'));
-      });
-    </script><link rel="stylesheet" href="/interlog-preview/video/_astro/Page.C1izBbXb.css"><style>.ph[data-astro-cid-75ysl5lo]{isolation:isolate;background:var(--band-bg);color:var(--ink);border-radius:clamp(28px,4vw,56px);margin:0 clamp(8px,1.2vw,16px);padding-top:clamp(28px,4vw,48px);position:relative;overflow:clip}.crumbs[data-astro-cid-75ysl5lo]{color:var(--muted);flex-wrap:wrap;gap:6px 10px;margin-bottom:clamp(24px,3.5vw,44px);font-size:14px;display:flex}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]{color:var(--ink-2);text-decoration:none}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]:hover{color:var(--accent)}.crumbs[data-astro-cid-75ysl5lo] [data-astro-cid-75ysl5lo][aria-current]{color:var(--muted)}.cur[data-astro-cid-75ysl5lo]{gap:10px;display:inline-flex}.compact[data-astro-cid-75ysl5lo] .cur[data-astro-cid-75ysl5lo]{display:none}.ph-copy[data-astro-cid-75ysl5lo]{justify-items:start;gap:22px;max-width:900px;display:grid}h1[data-astro-cid-75ysl5lo]{letter-spacing:-.045em;text-wrap:balance;max-width:16ch;font-size:clamp(40px,6.2vw,88px);line-height:.98}.compact[data-astro-cid-75ysl5lo] h1[data-astro-cid-75ysl5lo]{letter-spacing:-.03em;max-width:26ch;font-size:clamp(30px,4vw,54px);line-height:1.06}.ph-rail[data-astro-cid-75ysl5lo]{height:calc(var(--th) + 30px);--th:clamp(52px, 7vw, 96px);margin-top:clamp(28px,4vw,56px);position:relative;container-type:inline-size}.compact[data-astro-cid-75ysl5lo] .ph-rail[data-astro-cid-75ysl5lo]{--th:clamp(40px, 4.5vw, 64px)}.ph-rail[data-astro-cid-75ysl5lo]:before{content:"";background:linear-gradient(var(--rail), var(--rail)) 0 0 / 100% 2px no-repeat, linear-gradient(var(--rail), var(--rail)) 0 100% / 100% 2px no-repeat, repeating-linear-gradient(90deg, var(--sleeper) 0 4px, transparent 4px 22px);height:10px;position:absolute;bottom:14px;left:0;right:0}.ph-train[data-astro-cid-75ysl5lo]{height:var(--th);width:auto;color:var(--ink);stroke-width:1.8px;animation:ph-arrive 3.2s var(--ease-out) .2s both;position:absolute;bottom:22px;left:0;overflow:visible}.ph-train[data-astro-cid-75ysl5lo] .wheel{animation:ph-roll 3.2s var(--ease-out) .2s both}@keyframes ph-arrive{0%{transform:translate(-105%)}to{transform:translateX(calc(100cqw - 100% - var(--gutter)))}}@keyframes ph-roll{0%{transform:rotate(-2160deg)}to{transform:rotate(0)}}
+    </script><link rel="stylesheet" href="/interlog-preview/video/_astro/Page.DkhGa6cG.css"><style>.ph[data-astro-cid-75ysl5lo]{isolation:isolate;background:var(--band-bg);color:var(--ink);border-radius:clamp(28px,4vw,56px);margin:0 clamp(8px,1.2vw,16px);padding-top:clamp(28px,4vw,48px);position:relative;overflow:clip}.crumbs[data-astro-cid-75ysl5lo]{color:var(--muted);flex-wrap:wrap;gap:6px 10px;margin-bottom:clamp(24px,3.5vw,44px);font-size:14px;display:flex}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]{color:var(--ink-2);text-decoration:none}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]:hover{color:var(--accent)}.crumbs[data-astro-cid-75ysl5lo] [data-astro-cid-75ysl5lo][aria-current]{color:var(--muted)}.cur[data-astro-cid-75ysl5lo]{gap:10px;display:inline-flex}.compact[data-astro-cid-75ysl5lo] .cur[data-astro-cid-75ysl5lo]{display:none}.ph-copy[data-astro-cid-75ysl5lo]{justify-items:start;gap:22px;max-width:900px;display:grid}h1[data-astro-cid-75ysl5lo]{letter-spacing:-.045em;text-wrap:balance;max-width:16ch;font-size:clamp(40px,6.2vw,88px);line-height:.98}.compact[data-astro-cid-75ysl5lo] h1[data-astro-cid-75ysl5lo]{letter-spacing:-.03em;max-width:26ch;font-size:clamp(30px,4vw,54px);line-height:1.06}.ph-rail[data-astro-cid-75ysl5lo]{height:calc(var(--th) + 30px);--th:clamp(52px, 7vw, 96px);margin-top:clamp(28px,4vw,56px);position:relative;container-type:inline-size}.compact[data-astro-cid-75ysl5lo] .ph-rail[data-astro-cid-75ysl5lo]{--th:clamp(40px, 4.5vw, 64px)}.ph-rail[data-astro-cid-75ysl5lo]:before{content:"";background:linear-gradient(var(--rail), var(--rail)) 0 0 / 100% 2px no-repeat, linear-gradient(var(--rail), var(--rail)) 0 100% / 100% 2px no-repeat, repeating-linear-gradient(90deg, var(--sleeper) 0 4px, transparent 4px 22px);height:10px;position:absolute;bottom:14px;left:0;right:0}.ph-train[data-astro-cid-75ysl5lo]{height:var(--th);width:auto;color:var(--ink);stroke-width:1.8px;animation:16s linear -5s infinite ph-run;position:absolute;bottom:22px;left:0;overflow:visible}.ph-train[data-astro-cid-75ysl5lo] .wheel{animation:.8s linear infinite ph-spin}@keyframes ph-run{0%{transform:translate(-100%)}to{transform:translate(100cqw)}}@keyframes ph-spin{to{transform:rotate(360deg)}}
 .nc-link[data-astro-cid-r3tkxwmq]{height:100%;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-core);box-shadow:var(--shadow-sm), var(--highlight);transition:translate .5s var(--ease), box-shadow .5s var(--ease), border-color .5s var(--ease);grid-template-rows:auto 1fr;text-decoration:none;display:grid;overflow:hidden}.nc-img[data-astro-cid-r3tkxwmq]{aspect-ratio:16/10;background:var(--bg-2);overflow:hidden}.nc-img[data-astro-cid-r3tkxwmq] img[data-astro-cid-r3tkxwmq]{object-fit:cover;width:100%;height:100%;transition:scale .9s var(--ease);display:block}.nc-img[data-astro-cid-r3tkxwmq].contain{background:#fff}.nc-img[data-astro-cid-r3tkxwmq].contain img[data-astro-cid-r3tkxwmq]{object-fit:contain;padding:8% 10%}.nc-body[data-astro-cid-r3tkxwmq]{align-content:start;gap:10px;padding:20px 22px 24px;display:grid}.nc-date[data-astro-cid-r3tkxwmq]{letter-spacing:.04em;color:var(--muted);text-transform:uppercase;font-size:12px}.nc-title[data-astro-cid-r3tkxwmq]{font:600 19px/1.25 var(--font-display);letter-spacing:-.015em;text-wrap:pretty}.nc-lead[data-astro-cid-r3tkxwmq]{color:var(--ink-2);font-size:15px}.nc-lead[data-astro-cid-r3tkxwmq]:first-letter{text-transform:uppercase}@media (hover:hover) and (pointer:fine){.nc-link[data-astro-cid-r3tkxwmq]:hover{box-shadow:var(--shadow), var(--highlight);border-color:var(--line-strong);translate:0 -4px}.nc-link[data-astro-cid-r3tkxwmq]:hover .nc-img[data-astro-cid-r3tkxwmq] img[data-astro-cid-r3tkxwmq]{scale:1.04}.nc-link[data-astro-cid-r3tkxwmq]:hover .nc-title[data-astro-cid-r3tkxwmq]{color:var(--accent)}}
 .date[data-astro-cid-7dbqu7vi]{letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-size:13px}.ru-note[data-astro-cid-7dbqu7vi]{color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px}.article[data-astro-cid-7dbqu7vi]{gap:clamp(24px,3vw,36px);max-width:920px;display:grid}.cover[data-astro-cid-7dbqu7vi]{border-radius:var(--r-shell);background:var(--bg-2);box-shadow:var(--shadow-sm);overflow:hidden}.cover[data-astro-cid-7dbqu7vi] img[data-astro-cid-7dbqu7vi]{width:100%;height:auto;display:block}.cover[data-astro-cid-7dbqu7vi].contain{background:#fff;padding:6% 8%}.prose[data-astro-cid-7dbqu7vi]{color:var(--ink);gap:1em;max-width:64ch;font-size:clamp(18px,1.5vw,21px);line-height:1.6;display:grid}.prose[data-astro-cid-7dbqu7vi] p:first-child:first-letter{text-transform:uppercase}.back[data-astro-cid-7dbqu7vi]{color:var(--ink-2);justify-self:start;align-items:center;gap:10px;text-decoration:none;display:inline-flex}.back[data-astro-cid-7dbqu7vi]:hover{color:var(--accent)}.back[data-astro-cid-7dbqu7vi] .back-ic{transform:scaleX(-1)}.more-title[data-astro-cid-7dbqu7vi]{margin-bottom:28px;font-size:clamp(26px,3vw,40px)}.grid[data-astro-cid-7dbqu7vi]{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;display:grid}.cell[data-astro-cid-7dbqu7vi]{display:grid}@media (width<=1000px){.grid[data-astro-cid-7dbqu7vi]{grid-template-columns:repeat(2,minmax(0,1fr))}.cell[data-astro-cid-7dbqu7vi]:nth-child(3){display:none}}@media (width<=640px){.grid[data-astro-cid-7dbqu7vi]{grid-template-columns:1fr}.cell[data-astro-cid-7dbqu7vi]:nth-child(3){display:grid}}
 </style></head><body><a class="skip" href="#main">Перейти к содержанию</a><header class="hdr" data-header data-astro-cid-nen7h5rs><div class="pill" data-astro-cid-nen7h5rs><a href="/interlog-preview/video/" class="logo" aria-label="Interlog multimodal, на главную" data-astro-cid-nen7h5rs><img src="/interlog-preview/video/_astro/logo.CyCUZ8S5_ZFs7u7.webp" alt loading="eager" data-astro-cid-nen7h5rs="true" decoding="async" width="132" height="40" class="logo-img"></a><nav class="nav" aria-label="Основное меню" data-astro-cid-nen7h5rs><a href="/interlog-preview/video/uslugi/" data-astro-cid-nen7h5rs>Услуги</a><a href="/interlog-preview/video/park-vagonov/" data-astro-cid-nen7h5rs>Парк вагонов</a><a href="/interlog-preview/video/geografiya/" data-astro-cid-nen7h5rs>География</a><a href="/interlog-preview/video/klienty/" data-astro-cid-nen7h5rs>Клиенты</a><a href="/interlog-preview/video/novosti/" aria-current="page" data-astro-cid-nen7h5rs>Новости</a><a href="/interlog-preview/video/o-kompanii/" data-astro-cid-nen7h5rs>О компании</a><a href="/interlog-preview/video/kontakty/" data-astro-cid-nen7h5rs>Контакты</a></nav><div class="end" data-astro-cid-nen7h5rs><div class="lang" aria-label="Язык сайта" data-astro-cid-nen7h5rs><a href="/interlog-preview/video/novosti/dhl-pokupaet-krupnejshuyu-set-posylok-mng-kargo-eto-novaya-svyaz-turczii-i-es/" hreflang="ru" lang="ru" aria-current="true" data-astro-cid-nen7h5rs>RU</a><a href="/interlog-preview/video/kz/novosti/dhl-pokupaet-krupnejshuyu-set-posylok-mng-kargo-eto-novaya-svyaz-turczii-i-es/" hreflang="kk" lang="kk" data-astro-cid-nen7h5rs>ҚАЗ</a><a href="/interlog-preview/video/en/novosti/dhl-pokupaet-krupnejshuyu-set-posylok-mng-kargo-eto-novaya-svyaz-turczii-i-es/" hreflang="en" lang="en" data-astro-cid-nen7h5rs>EN</a></div><a class="btn btn-primary cta" href="/interlog-preview/video/kontakty/#request" data-astro-cid-nen7h5rs>Оставить заявку <span class="btn-ic" data-astro-cid-nen7h5rs><svg width="20" height="20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a><button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open data-astro-cid-nen7h5rs><span data-astro-cid-nen7h5rs></span><span data-astro-cid-nen7h5rs></span><span class="visually-hidden" data-astro-cid-nen7h5rs>Меню</span></button></div><!-- полоса прокрутки, по ней едет маленький тепловоз --><span class="progress-track" data-progress-track aria-hidden="true" data-astro-cid-nen7h5rs><span class="progress" data-progress data-astro-cid-nen7h5rs></span><svg class="veh progress-loco" viewBox="-2 0 244 104" data-astro-cid-nen7h5rs>
@@ -290,95 +283,4 @@
   <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
   <rect x="181" y="77" width="14" height="10"/>
   <path d="M184 79v6M188 79v6M192 79v6"/>
-  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g></svg></div><div class="container" data-astro-cid-jo6i4kqk><div class="ftr-card" data-astro-cid-jo6i4kqk><div class="ftr-grid" data-astro-cid-jo6i4kqk><div class="ftr-brand" data-astro-cid-jo6i4kqk><a href="/interlog-preview/video/" data-astro-cid-jo6i4kqk><img src="/interlog-preview/video/_astro/logo.CyCUZ8S5_Z1OQgE4.webp" alt="Interlog multimodal" data-astro-cid-jo6i4kqk="true" loading="lazy" decoding="async" width="160" height="49" class="ftr-logo"></a><a class="ftr-phone mono" href="tel:+77172576741" data-astro-cid-jo6i4kqk>+7 (7172) 57-67-41</a></div><div class="ftr-cols" data-astro-cid-jo6i4kqk><nav class="ftr-nav" aria-label="Услуги" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Услуги</p><a href="/interlog-preview/video/perevozka-gruzov/" data-astro-cid-jo6i4kqk>Перевозка грузов</a><a href="/interlog-preview/video/ekspedirovanie-gruzov/" data-astro-cid-jo6i4kqk>Экспедирование</a><a href="/interlog-preview/video/arenda-vagonov/" data-astro-cid-jo6i4kqk>Аренда вагонов</a><a href="/interlog-preview/video/park-vagonov/" data-astro-cid-jo6i4kqk>Парк вагонов</a><a href="/interlog-preview/video/geografiya/" data-astro-cid-jo6i4kqk>География</a><a href="/interlog-preview/video/inkoterms-2020/" data-astro-cid-jo6i4kqk>Инкотермс 2020</a></nav><nav class="ftr-nav" aria-label="Компания" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Компания</p><a href="/interlog-preview/video/o-kompanii/" data-astro-cid-jo6i4kqk>О компании</a><a href="/interlog-preview/video/klienty/" data-astro-cid-jo6i4kqk>Клиенты и партнёры</a><a href="/interlog-preview/video/novosti/" data-astro-cid-jo6i4kqk>Новости</a><a href="/interlog-preview/video/vakansii/" data-astro-cid-jo6i4kqk>Вакансии</a><a href="/interlog-preview/video/kontakty/" data-astro-cid-jo6i4kqk>Контакты</a></nav></div></div><div class="ftr-bottom" data-astro-cid-jo6i4kqk><span data-astro-cid-jo6i4kqk>© 2026 ТОО «Interlog multimodal»</span></div></div></div></footer><svg class="veh vt-train" viewBox="-2 0 1228 104" aria-hidden="true"><g transform="translate(0 0)">
-    <path d="M10 20H230V74H10Z"/>
-    <path d="M10 20Q120 6 230 20"/>
-    <path d="M98 26h44v46H98z"/><path d="M120 26v46"/>
-    <path d="M92 24h56M92 74h56"/>
-    <path d="M114 46h3M123 46h3"/>
-    <path d="M30 20V74M50 20V74M70 20V74M170 20V74M190 20V74M210 20V74"/>
-    <path d="M10 48H92M148 48H230" class="thin"/>
-  <path d="M10 76H230"/>
-  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
-  <path d="M0 73.5h2M238 73.5h2"/>
-  
-  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="45" y="77" width="14" height="10"/>
-  <path d="M48 79v6M52 79v6M56 79v6"/>
-  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
-  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="181" y="77" width="14" height="10"/>
-  <path d="M184 79v6M188 79v6M192 79v6"/>
-  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(246 0)">
-    <path d="M10 28H230V74H10Z"/>
-    <path d="M8 28H232M10 32H230"/>
-    <path d="M30 32V74M52.5 32V74M75 32V74M97.5 32V74M120 32V74M142.5 32V74M165 32V74M187.5 32V74M210 32V74"/>
-    <path d="M10 52H230" class="thin"/>
-    <path d="M14 34v38M226 34v38"/>
-    <path d="M16 40h6M16 46h6M16 52h6M16 58h6M16 64h6"/>
-  <path d="M10 76H230"/>
-  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
-  <path d="M0 73.5h2M238 73.5h2"/>
-  
-  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="45" y="77" width="14" height="10"/>
-  <path d="M48 79v6M52 79v6M56 79v6"/>
-  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
-  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="181" y="77" width="14" height="10"/>
-  <path d="M184 79v6M188 79v6M192 79v6"/>
-  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(492 0)">
-    <path d="M38 26H202A24 24 0 0 1 202 74H38A24 24 0 0 1 38 26Z"/>
-    <path d="M106 26v-10h28v10M112 16v-4h16v4"/>
-    <path d="M74 26v48M166 26v48" class="thin"/>
-    <path d="M140 16v58M148 16v58M140 24h8M140 32h8M140 40h8M140 48h8M140 56h8M140 64h8"/>
-    <path d="M20 50H220" class="thin"/>
-  <path d="M10 76H230"/>
-  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
-  <path d="M0 73.5h2M238 73.5h2"/>
-  
-  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="45" y="77" width="14" height="10"/>
-  <path d="M48 79v6M52 79v6M56 79v6"/>
-  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
-  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="181" y="77" width="14" height="10"/>
-  <path d="M184 79v6M188 79v6M192 79v6"/>
-  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(738 0)">
-    <path d="M14 24H226V56L206 72H184L168 58H72L56 72H34L14 56Z"/>
-    <path d="M14 30H226"/>
-    <path d="M40 24v-5h22v5M90 24v-5h22v5M128 24v-5h22v5M178 24v-5h22v5"/>
-    <path d="M48 30V58M84 30V58M120 30V58M156 30V58M192 30V58"/>
-    <path d="M72 58l-8 10M168 58l8 10"/>
-  <path d="M10 76H230"/>
-  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
-  <path d="M0 73.5h2M238 73.5h2"/>
-  
-  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="45" y="77" width="14" height="10"/>
-  <path d="M48 79v6M52 79v6M56 79v6"/>
-  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
-  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="181" y="77" width="14" height="10"/>
-  <path d="M184 79v6M188 79v6M192 79v6"/>
-  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(984 0)">
-    <path d="M10 26H196L224 40V76H10Z"/>
-    <path d="M200 33L218 42V54H200Z"/>
-    <path d="M14 34h20v14H14z"/><path d="M40 34h16v14H40z"/>
-    <path d="M64 33h116M64 39h116M64 45h116"/>
-    <path d="M30 26v-7h56v7M104 26v-5h48v5"/>
-    <path d="M22 19l8-6M68 19l-8-6"/>
-    <path class="acc" d="M10 62H224"/>
-    <path d="M10 68H224"/>
-  <path d="M10 76H230"/>
-  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
-  <path d="M0 73.5h2M238 73.5h2"/>
-  
-  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="45" y="77" width="14" height="10"/>
-  <path d="M48 79v6M52 79v6M56 79v6"/>
-  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
-  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
-  <rect x="181" y="77" width="14" height="10"/>
-  <path d="M184 79v6M188 79v6M192 79v6"/>
-  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g></svg></body></html><script type="module" src="/interlog-preview/video/_astro/Page.astro_astro_type_script_index_0_lang.JSqnedFr.js"></script>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g></svg></div><div class="container" data-astro-cid-jo6i4kqk><div class="ftr-card" data-astro-cid-jo6i4kqk><div class="ftr-grid" data-astro-cid-jo6i4kqk><div class="ftr-brand" data-astro-cid-jo6i4kqk><a href="/interlog-preview/video/" data-astro-cid-jo6i4kqk><img src="/interlog-preview/video/_astro/logo.CyCUZ8S5_Z1OQgE4.webp" alt="Interlog multimodal" data-astro-cid-jo6i4kqk="true" loading="lazy" decoding="async" width="160" height="49" class="ftr-logo"></a><a class="ftr-phone mono" href="tel:+77172576741" data-astro-cid-jo6i4kqk>+7 (7172) 57-67-41</a></div><div class="ftr-cols" data-astro-cid-jo6i4kqk><nav class="ftr-nav" aria-label="Услуги" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Услуги</p><a href="/interlog-preview/video/perevozka-gruzov/" data-astro-cid-jo6i4kqk>Перевозка грузов</a><a href="/interlog-preview/video/ekspedirovanie-gruzov/" data-astro-cid-jo6i4kqk>Экспедирование</a><a href="/interlog-preview/video/arenda-vagonov/" data-astro-cid-jo6i4kqk>Аренда вагонов</a><a href="/interlog-preview/video/park-vagonov/" data-astro-cid-jo6i4kqk>Парк вагонов</a><a href="/interlog-preview/video/geografiya/" data-astro-cid-jo6i4kqk>География</a><a href="/interlog-preview/video/inkoterms-2020/" data-astro-cid-jo6i4kqk>Инкотермс 2020</a></nav><nav class="ftr-nav" aria-label="Компания" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Компания</p><a href="/interlog-preview/video/o-kompanii/" data-astro-cid-jo6i4kqk>О компании</a><a href="/interlog-preview/video/klienty/" data-astro-cid-jo6i4kqk>Клиенты и партнёры</a><a href="/interlog-preview/video/novosti/" data-astro-cid-jo6i4kqk>Новости</a><a href="/interlog-preview/video/vakansii/" data-astro-cid-jo6i4kqk>Вакансии</a><a href="/interlog-preview/video/kontakty/" data-astro-cid-jo6i4kqk>Контакты</a></nav></div></div><div class="ftr-bottom" data-astro-cid-jo6i4kqk><span data-astro-cid-jo6i4kqk>© 2026 ТОО «Interlog multimodal»</span></div></div></div></footer></body></html><script type="module" src="/interlog-preview/video/_astro/Page.astro_astro_type_script_index_0_lang.JSqnedFr.js"></script>
