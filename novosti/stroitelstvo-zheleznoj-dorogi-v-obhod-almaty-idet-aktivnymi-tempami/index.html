@@ -4,760 +4,283 @@
       document.documentElement.classList.add('motion');
       // Safari до iOS 15.4 не знает Object.hasOwn, а библиотеки анимаций им пользуются.
       if (!Object.hasOwn) Object.hasOwn = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
-    </script><link rel="stylesheet" href="/interlog-preview/_astro/Page.CAQ5f-5L.css"><style>.ph[data-astro-cid-75ysl5lo]{isolation:isolate;background:var(--band-bg);color:var(--ink);border-radius:clamp(28px,4vw,56px);margin:0 clamp(8px,1.2vw,16px);padding-top:clamp(28px,4vw,48px);position:relative;overflow:clip}.crumbs[data-astro-cid-75ysl5lo]{color:var(--muted);flex-wrap:wrap;gap:6px 10px;margin-bottom:clamp(24px,3.5vw,44px);font-size:14px;display:flex}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]{color:var(--ink-2);text-decoration:none}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]:hover{color:var(--accent)}.crumbs[data-astro-cid-75ysl5lo] [data-astro-cid-75ysl5lo][aria-current]{color:var(--muted)}.cur[data-astro-cid-75ysl5lo]{gap:10px;display:inline-flex}.compact[data-astro-cid-75ysl5lo] .cur[data-astro-cid-75ysl5lo]{display:none}.ph-copy[data-astro-cid-75ysl5lo]{justify-items:start;gap:22px;max-width:900px;display:grid}h1[data-astro-cid-75ysl5lo]{letter-spacing:-.045em;text-wrap:balance;max-width:16ch;font-size:clamp(40px,6.2vw,88px);line-height:.98}.compact[data-astro-cid-75ysl5lo] h1[data-astro-cid-75ysl5lo]{letter-spacing:-.03em;max-width:26ch;font-size:clamp(30px,4vw,54px);line-height:1.06}.ph-rail[data-astro-cid-75ysl5lo]{height:calc(var(--th) + 30px);--th:clamp(52px, 7vw, 96px);margin-top:clamp(28px,4vw,56px);position:relative;container-type:inline-size}.compact[data-astro-cid-75ysl5lo] .ph-rail[data-astro-cid-75ysl5lo]{--th:clamp(40px, 4.5vw, 64px)}.ph-rail[data-astro-cid-75ysl5lo]:before{content:"";background:linear-gradient(var(--rail), var(--rail)) 0 0 / 100% 2px no-repeat, linear-gradient(var(--rail), var(--rail)) 0 100% / 100% 2px no-repeat, repeating-linear-gradient(90deg, var(--sleeper) 0 4px, transparent 4px 22px);height:10px;position:absolute;bottom:14px;left:0;right:0}.ph-train[data-astro-cid-75ysl5lo]{height:var(--th);width:auto;color:var(--ink);stroke-width:1.8px;animation:16s linear -5s infinite ph-run;position:absolute;bottom:22px;left:0;overflow:visible}.ph-train[data-astro-cid-75ysl5lo] .wheel{animation:.8s linear infinite ph-spin}@keyframes ph-run{0%{transform:translate(-100%)}to{transform:translate(100cqw)}}@keyframes ph-spin{to{transform:rotate(360deg)}}
+    </script><link rel="stylesheet" href="/interlog-preview/_astro/Page.Dnwwkd20.css"><style>.ph[data-astro-cid-75ysl5lo]{isolation:isolate;background:var(--band-bg);color:var(--ink);border-radius:clamp(28px,4vw,56px);margin:0 clamp(8px,1.2vw,16px);padding-top:clamp(28px,4vw,48px);position:relative;overflow:clip}.crumbs[data-astro-cid-75ysl5lo]{color:var(--muted);flex-wrap:wrap;gap:6px 10px;margin-bottom:clamp(24px,3.5vw,44px);font-size:14px;display:flex}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]{color:var(--ink-2);text-decoration:none}.crumbs[data-astro-cid-75ysl5lo] a[data-astro-cid-75ysl5lo]:hover{color:var(--accent)}.crumbs[data-astro-cid-75ysl5lo] [data-astro-cid-75ysl5lo][aria-current]{color:var(--muted)}.cur[data-astro-cid-75ysl5lo]{gap:10px;display:inline-flex}.compact[data-astro-cid-75ysl5lo] .cur[data-astro-cid-75ysl5lo]{display:none}.ph-copy[data-astro-cid-75ysl5lo]{justify-items:start;gap:22px;max-width:900px;display:grid}h1[data-astro-cid-75ysl5lo]{letter-spacing:-.045em;text-wrap:balance;max-width:16ch;font-size:clamp(40px,6.2vw,88px);line-height:.98}.compact[data-astro-cid-75ysl5lo] h1[data-astro-cid-75ysl5lo]{letter-spacing:-.03em;max-width:26ch;font-size:clamp(30px,4vw,54px);line-height:1.06}.ph-rail[data-astro-cid-75ysl5lo]{height:calc(var(--th) + 30px);--th:clamp(52px, 7vw, 96px);margin-top:clamp(28px,4vw,56px);position:relative;container-type:inline-size}.compact[data-astro-cid-75ysl5lo] .ph-rail[data-astro-cid-75ysl5lo]{--th:clamp(40px, 4.5vw, 64px)}.ph-rail[data-astro-cid-75ysl5lo]:before{content:"";background:linear-gradient(var(--rail), var(--rail)) 0 0 / 100% 2px no-repeat, linear-gradient(var(--rail), var(--rail)) 0 100% / 100% 2px no-repeat, repeating-linear-gradient(90deg, var(--sleeper) 0 4px, transparent 4px 22px);height:10px;position:absolute;bottom:14px;left:0;right:0}.ph-train[data-astro-cid-75ysl5lo]{height:var(--th);width:auto;color:var(--ink);stroke-width:1.8px;animation:16s linear -5s infinite ph-run;position:absolute;bottom:22px;left:0;overflow:visible}.ph-train[data-astro-cid-75ysl5lo] .wheel{animation:.8s linear infinite ph-spin}@keyframes ph-run{0%{transform:translate(-100%)}to{transform:translate(100cqw)}}@keyframes ph-spin{to{transform:rotate(360deg)}}
 .nc-link[data-astro-cid-r3tkxwmq]{height:100%;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-core);box-shadow:var(--shadow-sm), var(--highlight);transition:translate .5s var(--ease), box-shadow .5s var(--ease), border-color .5s var(--ease);grid-template-rows:auto 1fr;text-decoration:none;display:grid;overflow:hidden}.nc-img[data-astro-cid-r3tkxwmq]{aspect-ratio:16/10;background:var(--bg-2);overflow:hidden}.nc-img[data-astro-cid-r3tkxwmq] img[data-astro-cid-r3tkxwmq]{object-fit:cover;width:100%;height:100%;transition:scale .9s var(--ease);display:block}.nc-img[data-astro-cid-r3tkxwmq].contain{background:#fff}.nc-img[data-astro-cid-r3tkxwmq].contain img[data-astro-cid-r3tkxwmq]{object-fit:contain;padding:8% 10%}.nc-body[data-astro-cid-r3tkxwmq]{align-content:start;gap:10px;padding:20px 22px 24px;display:grid}.nc-date[data-astro-cid-r3tkxwmq]{letter-spacing:.04em;color:var(--muted);text-transform:uppercase;font-size:12px}.nc-title[data-astro-cid-r3tkxwmq]{font:600 19px/1.25 var(--font-display);letter-spacing:-.015em;text-wrap:pretty}.nc-lead[data-astro-cid-r3tkxwmq]{color:var(--ink-2);font-size:15px}.nc-lead[data-astro-cid-r3tkxwmq]:first-letter{text-transform:uppercase}@media (hover:hover) and (pointer:fine){.nc-link[data-astro-cid-r3tkxwmq]:hover{box-shadow:var(--shadow), var(--highlight);border-color:var(--line-strong);translate:0 -4px}.nc-link[data-astro-cid-r3tkxwmq]:hover .nc-img[data-astro-cid-r3tkxwmq] img[data-astro-cid-r3tkxwmq]{scale:1.04}.nc-link[data-astro-cid-r3tkxwmq]:hover .nc-title[data-astro-cid-r3tkxwmq]{color:var(--accent)}}
 .date[data-astro-cid-7dbqu7vi]{letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-size:13px}.ru-note[data-astro-cid-7dbqu7vi]{color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px}.article[data-astro-cid-7dbqu7vi]{gap:clamp(24px,3vw,36px);max-width:920px;display:grid}.cover[data-astro-cid-7dbqu7vi]{border-radius:var(--r-shell);background:var(--bg-2);box-shadow:var(--shadow-sm);overflow:hidden}.cover[data-astro-cid-7dbqu7vi] img[data-astro-cid-7dbqu7vi]{width:100%;height:auto;display:block}.cover[data-astro-cid-7dbqu7vi].contain{background:#fff;padding:6% 8%}.prose[data-astro-cid-7dbqu7vi]{color:var(--ink);gap:1em;max-width:64ch;font-size:clamp(18px,1.5vw,21px);line-height:1.6;display:grid}.prose[data-astro-cid-7dbqu7vi] p:first-child:first-letter{text-transform:uppercase}.back[data-astro-cid-7dbqu7vi]{color:var(--ink-2);justify-self:start;align-items:center;gap:10px;text-decoration:none;display:inline-flex}.back[data-astro-cid-7dbqu7vi]:hover{color:var(--accent)}.back[data-astro-cid-7dbqu7vi] .back-ic{transform:scaleX(-1)}.more-title[data-astro-cid-7dbqu7vi]{margin-bottom:28px;font-size:clamp(26px,3vw,40px)}.grid[data-astro-cid-7dbqu7vi]{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;display:grid}.cell[data-astro-cid-7dbqu7vi]{display:grid}@media (width<=1000px){.grid[data-astro-cid-7dbqu7vi]{grid-template-columns:repeat(2,minmax(0,1fr))}.cell[data-astro-cid-7dbqu7vi]:nth-child(3){display:none}}@media (width<=640px){.grid[data-astro-cid-7dbqu7vi]{grid-template-columns:1fr}.cell[data-astro-cid-7dbqu7vi]:nth-child(3){display:grid}}
 </style></head><body><a class="skip" href="#main">Перейти к содержанию</a><header class="hdr" data-header data-astro-cid-nen7h5rs><div class="pill" data-astro-cid-nen7h5rs><a href="/interlog-preview/" class="logo" aria-label="Interlog multimodal, на главную" data-astro-cid-nen7h5rs><img src="/interlog-preview/_astro/logo.CyCUZ8S5_Z12ekue.webp" alt loading="eager" data-astro-cid-nen7h5rs="true" decoding="async" width="132" height="40" class="logo-img"></a><nav class="nav" aria-label="Основное меню" data-astro-cid-nen7h5rs><a href="/interlog-preview/uslugi/" data-astro-cid-nen7h5rs>Услуги</a><a href="/interlog-preview/park-vagonov/" data-astro-cid-nen7h5rs>Парк вагонов</a><a href="/interlog-preview/geografiya/" data-astro-cid-nen7h5rs>География</a><a href="/interlog-preview/klienty/" data-astro-cid-nen7h5rs>Клиенты</a><a href="/interlog-preview/novosti/" aria-current="page" data-astro-cid-nen7h5rs>Новости</a><a href="/interlog-preview/o-kompanii/" data-astro-cid-nen7h5rs>О компании</a><a href="/interlog-preview/kontakty/" data-astro-cid-nen7h5rs>Контакты</a></nav><div class="end" data-astro-cid-nen7h5rs><div class="lang" aria-label="Язык сайта" data-astro-cid-nen7h5rs><a href="/interlog-preview/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="ru" lang="ru" aria-current="true" data-astro-cid-nen7h5rs>RU</a><a href="/interlog-preview/kz/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="kk" lang="kk" data-astro-cid-nen7h5rs>ҚАЗ</a><a href="/interlog-preview/en/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="en" lang="en" data-astro-cid-nen7h5rs>EN</a></div><a class="btn btn-primary cta" href="/interlog-preview/kontakty/#request" data-astro-cid-nen7h5rs>Оставить заявку <span class="btn-ic" data-astro-cid-nen7h5rs><svg width="20" height="20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a><button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open data-astro-cid-nen7h5rs><span data-astro-cid-nen7h5rs></span><span data-astro-cid-nen7h5rs></span><span class="visually-hidden" data-astro-cid-nen7h5rs>Меню</span></button></div><!-- полоса прокрутки, по ней едет маленький тепловоз --><span class="progress-track" data-progress-track aria-hidden="true" data-astro-cid-nen7h5rs><span class="progress" data-progress data-astro-cid-nen7h5rs></span><svg class="veh progress-loco" viewBox="-2 0 244 104" data-astro-cid-nen7h5rs>
-    <rect x="30" y="18" width="52" height="7" fill="#4A4F55" rx="2"/><rect x="104" y="19" width="50" height="6" fill="#4A4F55" rx="2"/>
-    <path d="M24 18l7-6M64 18l-7-6" stroke="#2B2F33" stroke-width="1.6"/>
-    <path d="M8 25H192L224 40V72H8Z" fill="#E9ECEF"/>
-    <path d="M8 50H224V72H8Z" fill="#D7262F"/>
-    <path d="M8 46H224V50H8Z" fill="#B71C24"/>
-    <path d="M192 25L224 40V50H192Z" fill="#DADEE2"/>
-    <path d="M196 30L218 41V48H196Z" fill="#1B2430"/>
-    <path d="M198 32l6 3v11h-6z" fill="rgb(255 255 255 / .25)"/>
-    <rect x="166" y="30" width="20" height="14" fill="#1B2430" rx="1.5"/><rect x="168" y="31.5" width="5" height="11" fill="rgb(255 255 255 / .22)"/>
-    <rect x="16" y="30" width="18" height="13" fill="#2A2F35" rx="1"/><rect x="40" y="30" width="14" height="13" fill="#2A2F35" rx="1"/>
-    <rect x="62" y="31" width="3" height="12" fill="#2C3137"/><rect x="70" y="31" width="3" height="12" fill="#2C3137"/><rect x="78" y="31" width="3" height="12" fill="#2C3137"/><rect x="86" y="31" width="3" height="12" fill="#2C3137"/><rect x="94" y="31" width="3" height="12" fill="#2C3137"/><rect x="102" y="31" width="3" height="12" fill="#2C3137"/><rect x="110" y="31" width="3" height="12" fill="#2C3137"/><rect x="118" y="31" width="3" height="12" fill="#2C3137"/><rect x="126" y="31" width="3" height="12" fill="#2C3137"/><rect x="134" y="31" width="3" height="12" fill="#2C3137"/><rect x="142" y="31" width="3" height="12" fill="#2C3137"/><rect x="150" y="31" width="3" height="12" fill="#2C3137"/>
-    <rect x="8" y="25" width="216" height="2" fill="rgb(255 255 255 / .6)"/>
-    <rect x="8" y="66" width="216" height="6" fill="rgb(0 0 0 / .26)"/>
-    <g transform="translate(70 55) scale(1.05)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="221" cy="58" r="3" fill="#FFE59A"/><circle cx="221" cy="58" r="7" fill="#FFE59A" opacity=".25"/>
-    <circle cx="13" cy="58" r="2.2" fill="#FF6B6B"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+    <path d="M10 26H196L224 40V76H10Z"/>
+    <path d="M200 33L218 42V54H200Z"/>
+    <path d="M14 34h20v14H14z"/><path d="M40 34h16v14H40z"/>
+    <path d="M64 33h116M64 39h116M64 45h116"/>
+    <path d="M30 26v-7h56v7M104 26v-5h48v5"/>
+    <path d="M22 19l8-6M68 19l-8-6"/>
+    <path class="acc" d="M10 62H224"/>
+    <path d="M10 68H224"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></svg></span></div><div class="overlay" id="mobile-menu" hidden data-menu data-astro-cid-nen7h5rs><nav aria-label="Меню" data-astro-cid-nen7h5rs><a href="/interlog-preview/uslugi/" data-menu-link style="--i:0" data-astro-cid-nen7h5rs>Услуги</a><a href="/interlog-preview/park-vagonov/" data-menu-link style="--i:1" data-astro-cid-nen7h5rs>Парк вагонов</a><a href="/interlog-preview/geografiya/" data-menu-link style="--i:2" data-astro-cid-nen7h5rs>География</a><a href="/interlog-preview/klienty/" data-menu-link style="--i:3" data-astro-cid-nen7h5rs>Клиенты</a><a href="/interlog-preview/novosti/" data-menu-link aria-current="page" style="--i:4" data-astro-cid-nen7h5rs>Новости</a><a href="/interlog-preview/o-kompanii/" data-menu-link style="--i:5" data-astro-cid-nen7h5rs>О компании</a><a href="/interlog-preview/kontakty/" data-menu-link style="--i:6" data-astro-cid-nen7h5rs>Контакты</a></nav><div class="overlay-end" style="--i:7" data-astro-cid-nen7h5rs><a class="phone-lg mono" href="tel:+77172576741" data-astro-cid-nen7h5rs>+7 (7172) 57-67-41</a><div class="lang lang-lg" aria-label="Язык сайта" data-astro-cid-nen7h5rs><a href="/interlog-preview/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="ru" lang="ru" aria-current="true" data-astro-cid-nen7h5rs>RU</a><a href="/interlog-preview/kz/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="kk" lang="kk" data-astro-cid-nen7h5rs>ҚАЗ</a><a href="/interlog-preview/en/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="en" lang="en" data-astro-cid-nen7h5rs>EN</a></div><a class="btn btn-primary" href="/interlog-preview/kontakty/#request" data-menu-link data-astro-cid-nen7h5rs>Оставить заявку <span class="btn-ic" data-astro-cid-nen7h5rs><svg width="20" height="20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a></div></div></header><script type="module">var e=document.querySelector(`[data-header]`),t=e.querySelector(`[data-menu-open]`),n=e.querySelector(`[data-menu]`),r=r=>{t.setAttribute(`aria-expanded`,String(r)),e.classList.toggle(`is-open`,r),document.body.style.overflow=r?`hidden`:``,r?(n.hidden=!1,requestAnimationFrame(()=>n.classList.add(`is-in`))):(n.classList.remove(`is-in`),setTimeout(()=>{e.classList.contains(`is-open`)||(n.hidden=!0)},450))};t.addEventListener(`click`,()=>r(t.getAttribute(`aria-expanded`)!==`true`)),n.querySelectorAll(`[data-menu-link]`).forEach(e=>e.addEventListener(`click`,()=>r(!1))),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&e.classList.contains(`is-open`)&&r(!1)});var i=document.createElement(`div`);i.style.cssText=`position:absolute;top:0;height:1px;width:1px`,document.body.prepend(i),new IntersectionObserver(([t])=>e.classList.toggle(`is-scrolled`,!t.isIntersecting)).observe(i);</script><main id="main"><section class="ph band-blue compact" aria-labelledby="ph-title" data-astro-cid-75ysl5lo><div class="container" data-astro-cid-75ysl5lo><nav class="crumbs" aria-label="Вы здесь" data-astro-cid-75ysl5lo><a href="/interlog-preview/" data-astro-cid-75ysl5lo>Главная</a><span aria-hidden="true" data-astro-cid-75ysl5lo>/</span><a href="/interlog-preview/novosti/" data-astro-cid-75ysl5lo>Новости</a><span class="cur" data-astro-cid-75ysl5lo><span aria-hidden="true" data-astro-cid-75ysl5lo>/</span><span aria-current="page" data-astro-cid-75ysl5lo>Строительство железной дороги в обход Алматы идет активными темпами</span></span></nav><div class="ph-copy" data-astro-cid-75ysl5lo><h1 id="ph-title" lang="ru" data-reveal data-astro-cid-75ysl5lo>Строительство железной дороги в обход Алматы идет активными темпами</h1><time class="date mono" datetime="2024-05-24T10:36:36.000Z" data-reveal data-astro-cid-7dbqu7vi>24 мая 2024</time></div></div><div class="ph-rail" aria-hidden="true" data-astro-cid-75ysl5lo><svg class="veh ph-train" viewBox="-2 0 982 104" data-astro-cid-75ysl5lo><g transform="translate(0 0)">
-    <path d="M12 21Q120 15.5 228 21Z" fill="#30353A"/>
-    <rect x="7" y="20" width="226" height="3" fill="#25292D"/>
-    <rect x="10" y="23" width="220" height="49" fill="#454A50"/>
-    <rect x="17" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="17" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="28" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="28" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="39" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="39" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="50" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="50" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="61" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="61" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="72" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="72" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="83" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="83" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="157" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="157" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="168" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="168" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="179" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="179" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="190" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="190" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="201" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="201" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="212" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="212" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="223" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="223" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/>
-    <rect x="10" y="23" width="4" height="49" fill="#363B40"/><rect x="226" y="23" width="4" height="49" fill="#363B40"/>
-    <rect x="10" y="47" width="78" height="1.6" fill="#383D42"/><rect x="152" y="47" width="78" height="1.6" fill="#383D42"/>
-    <rect x="84" y="22.5" width="72" height="2.2" fill="#202326"/><rect x="84" y="70" width="72" height="2.4" fill="#202326"/>
-    <rect x="90" y="25" width="60" height="45" fill="#4D5258"/>
-    <rect x="95" y="27" width="1.8" height="41" fill="#40454B"/><rect x="103.8" y="27" width="1.8" height="41" fill="#40454B"/><rect x="112.6" y="27" width="1.8" height="41" fill="#40454B"/><rect x="121.4" y="27" width="1.8" height="41" fill="#40454B"/><rect x="130.2" y="27" width="1.8" height="41" fill="#40454B"/><rect x="139" y="27" width="1.8" height="41" fill="#40454B"/>
-    <rect x="90" y="36" width="60" height="1.6" fill="#3B4045"/><rect x="90" y="58" width="60" height="1.6" fill="#3B4045"/>
-    <rect x="90" y="25" width="60" height="45" fill="none" stroke="#2A2E33" stroke-width="1.2"/>
-    <rect x="143" y="28" width="2.4" height="40" fill="#26292D"/><rect x="141" y="44" width="7" height="3" fill="#9AA0A6" rx="1"/>
-    <rect x="10" y="23" width="220" height="7.84" fill="rgb(255 255 255 / .13)"/><rect x="10" y="61.22" width="220" height="10.78" fill="rgb(0 0 0 / .26)"/>
-    <rect x="22" y="52" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="22" y="56" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="22" y="59.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(162 30) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="20" cy="34" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M16 34h8M20 30v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></svg></span></div><div class="overlay" id="mobile-menu" hidden data-menu data-astro-cid-nen7h5rs><nav aria-label="Меню" data-astro-cid-nen7h5rs><a href="/interlog-preview/uslugi/" data-menu-link style="--i:0" data-astro-cid-nen7h5rs>Услуги</a><a href="/interlog-preview/park-vagonov/" data-menu-link style="--i:1" data-astro-cid-nen7h5rs>Парк вагонов</a><a href="/interlog-preview/geografiya/" data-menu-link style="--i:2" data-astro-cid-nen7h5rs>География</a><a href="/interlog-preview/klienty/" data-menu-link style="--i:3" data-astro-cid-nen7h5rs>Клиенты</a><a href="/interlog-preview/novosti/" data-menu-link aria-current="page" style="--i:4" data-astro-cid-nen7h5rs>Новости</a><a href="/interlog-preview/o-kompanii/" data-menu-link style="--i:5" data-astro-cid-nen7h5rs>О компании</a><a href="/interlog-preview/kontakty/" data-menu-link style="--i:6" data-astro-cid-nen7h5rs>Контакты</a></nav><div class="overlay-end" style="--i:7" data-astro-cid-nen7h5rs><a class="phone-lg mono" href="tel:+77172576741" data-astro-cid-nen7h5rs>+7 (7172) 57-67-41</a><div class="lang lang-lg" aria-label="Язык сайта" data-astro-cid-nen7h5rs><a href="/interlog-preview/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="ru" lang="ru" aria-current="true" data-astro-cid-nen7h5rs>RU</a><a href="/interlog-preview/kz/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="kk" lang="kk" data-astro-cid-nen7h5rs>ҚАЗ</a><a href="/interlog-preview/en/novosti/stroitelstvo-zheleznoj-dorogi-v-obhod-almaty-idet-aktivnymi-tempami/" hreflang="en" lang="en" data-astro-cid-nen7h5rs>EN</a></div><a class="btn btn-primary" href="/interlog-preview/kontakty/#request" data-menu-link data-astro-cid-nen7h5rs>Оставить заявку <span class="btn-ic" data-astro-cid-nen7h5rs><svg width="20" height="20" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a></div></div></header><script type="module">var e=document.querySelector(`[data-header]`),t=e.querySelector(`[data-menu-open]`),n=e.querySelector(`[data-menu]`),r=r=>{t.setAttribute(`aria-expanded`,String(r)),e.classList.toggle(`is-open`,r),document.body.style.overflow=r?`hidden`:``,r?(n.hidden=!1,requestAnimationFrame(()=>n.classList.add(`is-in`))):(n.classList.remove(`is-in`),setTimeout(()=>{e.classList.contains(`is-open`)||(n.hidden=!0)},450))};t.addEventListener(`click`,()=>r(t.getAttribute(`aria-expanded`)!==`true`)),n.querySelectorAll(`[data-menu-link]`).forEach(e=>e.addEventListener(`click`,()=>r(!1))),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&e.classList.contains(`is-open`)&&r(!1)});var i=document.createElement(`div`);i.style.cssText=`position:absolute;top:0;height:1px;width:1px`,document.body.prepend(i),new IntersectionObserver(([t])=>e.classList.toggle(`is-scrolled`,!t.isIntersecting)).observe(i);</script><main id="main"><section class="ph band-blue compact" aria-labelledby="ph-title" data-astro-cid-75ysl5lo><div class="container" data-astro-cid-75ysl5lo><nav class="crumbs" aria-label="Вы здесь" data-astro-cid-75ysl5lo><a href="/interlog-preview/" data-astro-cid-75ysl5lo>Главная</a><span aria-hidden="true" data-astro-cid-75ysl5lo>/</span><a href="/interlog-preview/novosti/" data-astro-cid-75ysl5lo>Новости</a><span class="cur" data-astro-cid-75ysl5lo><span aria-hidden="true" data-astro-cid-75ysl5lo>/</span><span aria-current="page" data-astro-cid-75ysl5lo>Строительство железной дороги в обход Алматы идет активными темпами</span></span></nav><div class="ph-copy" data-astro-cid-75ysl5lo><h1 id="ph-title" lang="ru" data-reveal data-astro-cid-75ysl5lo>Строительство железной дороги в обход Алматы идет активными темпами</h1><time class="date mono" datetime="2024-05-24T10:36:36.000Z" data-reveal data-astro-cid-7dbqu7vi>24 мая 2024</time></div></div><div class="ph-rail" aria-hidden="true" data-astro-cid-75ysl5lo><svg class="veh ph-train" viewBox="-2 0 982 104" data-astro-cid-75ysl5lo><g transform="translate(0 0)">
+    <path d="M10 20H230V74H10Z"/>
+    <path d="M10 20Q120 6 230 20"/>
+    <path d="M98 26h44v46H98z"/><path d="M120 26v46"/>
+    <path d="M92 24h56M92 74h56"/>
+    <path d="M114 46h3M123 46h3"/>
+    <path d="M30 20V74M50 20V74M70 20V74M170 20V74M190 20V74M210 20V74"/>
+    <path d="M10 48H92M148 48H230" class="thin"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(246 0)">
-    <rect x="10" y="28" width="220" height="44" fill="#3D4248"/>
-    <rect x="8" y="26" width="224" height="4" fill="#30353A"/>
-    <rect x="26" y="30" width="3" height="42" fill="#33383D"/><rect x="26" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="49.1" y="30" width="3" height="42" fill="#33383D"/><rect x="49.1" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="72.3" y="30" width="3" height="42" fill="#33383D"/><rect x="72.3" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="95.4" y="30" width="3" height="42" fill="#33383D"/><rect x="95.4" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="118.5" y="30" width="3" height="42" fill="#33383D"/><rect x="118.5" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="141.6" y="30" width="3" height="42" fill="#33383D"/><rect x="141.6" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="164.8" y="30" width="3" height="42" fill="#33383D"/><rect x="164.8" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="187.9" y="30" width="3" height="42" fill="#33383D"/><rect x="187.9" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="211" y="30" width="3" height="42" fill="#33383D"/><rect x="211" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/>
-    <rect x="10" y="49" width="220" height="2.2" fill="#30353A"/>
-    <rect x="10" y="30" width="220" height="6.72" fill="rgb(255 255 255 / .13)"/><rect x="10" y="62.76" width="220" height="9.24" fill="rgb(0 0 0 / .26)"/>
-    <rect x="30" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="53.7" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="77.4" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="101.1" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="124.9" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="148.6" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="172.3" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="196" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/>
-    <rect x="40" y="35" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="40" y="39" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="40" y="42.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(150 35) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="18" cy="40" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M14 40h8M18 36v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(246 0)">
+    <path d="M10 28H230V74H10Z"/>
+    <path d="M8 28H232M10 32H230"/>
+    <path d="M30 32V74M52.5 32V74M75 32V74M97.5 32V74M120 32V74M142.5 32V74M165 32V74M187.5 32V74M210 32V74"/>
+    <path d="M10 52H230" class="thin"/>
+    <path d="M14 34v38M226 34v38"/>
+    <path d="M16 40h6M16 46h6M16 52h6M16 58h6M16 64h6"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(492 0)">
-    <rect x="40" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="90" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="128" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="178" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/>
-    <path d="M14 23H226V56L206 72H184L168 58H72L56 72H34L14 56Z" fill="#4A4F55"/>
-    <rect x="14" y="23" width="212" height="4" fill="#3A3F44"/>
-    <rect x="48" y="27" width="3" height="30" fill="#33383D"/><rect x="48" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="84" y="27" width="3" height="30" fill="#33383D"/><rect x="84" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="120" y="27" width="3" height="30" fill="#33383D"/><rect x="120" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="156" y="27" width="3" height="30" fill="#33383D"/><rect x="156" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="192" y="27" width="3" height="30" fill="#33383D"/><rect x="192" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/>
-    <path d="M14 23H226V30H14Z" fill="rgb(255 255 255 / .13)"/>
-    <path d="M14 50H226V56L206 72H184L168 58H72L56 72H34L14 56Z" fill="rgb(0 0 0 / .26)"/>
-    <path d="M72 58l-8 11M168 58l8 11" stroke="#25292D" stroke-width="2"/>
-    <rect x="24" y="33" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="24" y="37" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="24" y="40.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(132 33) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="206" cy="40" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M202 40h8M206 36v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(492 0)">
+    <path d="M14 24H226V56L206 72H184L168 58H72L56 72H34L14 56Z"/>
+    <path d="M14 30H226"/>
+    <path d="M40 24v-5h22v5M90 24v-5h22v5M128 24v-5h22v5M178 24v-5h22v5"/>
+    <path d="M48 30V58M84 30V58M120 30V58M156 30V58M192 30V58"/>
+    <path d="M72 58l-8 10M168 58l8 10"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(738 0)">
-    <rect x="30" y="18" width="52" height="7" fill="#4A4F55" rx="2"/><rect x="104" y="19" width="50" height="6" fill="#4A4F55" rx="2"/>
-    <path d="M24 18l7-6M64 18l-7-6" stroke="#2B2F33" stroke-width="1.6"/>
-    <path d="M8 25H192L224 40V72H8Z" fill="#E9ECEF"/>
-    <path d="M8 50H224V72H8Z" fill="#D7262F"/>
-    <path d="M8 46H224V50H8Z" fill="#B71C24"/>
-    <path d="M192 25L224 40V50H192Z" fill="#DADEE2"/>
-    <path d="M196 30L218 41V48H196Z" fill="#1B2430"/>
-    <path d="M198 32l6 3v11h-6z" fill="rgb(255 255 255 / .25)"/>
-    <rect x="166" y="30" width="20" height="14" fill="#1B2430" rx="1.5"/><rect x="168" y="31.5" width="5" height="11" fill="rgb(255 255 255 / .22)"/>
-    <rect x="16" y="30" width="18" height="13" fill="#2A2F35" rx="1"/><rect x="40" y="30" width="14" height="13" fill="#2A2F35" rx="1"/>
-    <rect x="62" y="31" width="3" height="12" fill="#2C3137"/><rect x="70" y="31" width="3" height="12" fill="#2C3137"/><rect x="78" y="31" width="3" height="12" fill="#2C3137"/><rect x="86" y="31" width="3" height="12" fill="#2C3137"/><rect x="94" y="31" width="3" height="12" fill="#2C3137"/><rect x="102" y="31" width="3" height="12" fill="#2C3137"/><rect x="110" y="31" width="3" height="12" fill="#2C3137"/><rect x="118" y="31" width="3" height="12" fill="#2C3137"/><rect x="126" y="31" width="3" height="12" fill="#2C3137"/><rect x="134" y="31" width="3" height="12" fill="#2C3137"/><rect x="142" y="31" width="3" height="12" fill="#2C3137"/><rect x="150" y="31" width="3" height="12" fill="#2C3137"/>
-    <rect x="8" y="25" width="216" height="2" fill="rgb(255 255 255 / .6)"/>
-    <rect x="8" y="66" width="216" height="6" fill="rgb(0 0 0 / .26)"/>
-    <g transform="translate(70 55) scale(1.05)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="221" cy="58" r="3" fill="#FFE59A"/><circle cx="221" cy="58" r="7" fill="#FFE59A" opacity=".25"/>
-    <circle cx="13" cy="58" r="2.2" fill="#FF6B6B"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(738 0)">
+    <path d="M10 26H196L224 40V76H10Z"/>
+    <path d="M200 33L218 42V54H200Z"/>
+    <path d="M14 34h20v14H14z"/><path d="M40 34h16v14H40z"/>
+    <path d="M64 33h116M64 39h116M64 45h116"/>
+    <path d="M30 26v-7h56v7M104 26v-5h48v5"/>
+    <path d="M22 19l8-6M68 19l-8-6"/>
+    <path class="acc" d="M10 62H224"/>
+    <path d="M10 68H224"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g></svg></div></section><article class="section flush-top" data-astro-cid-7dbqu7vi><div class="container article" data-astro-cid-7dbqu7vi><div class="cover" data-reveal data-astro-cid-7dbqu7vi><img src="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.37.33.BfzhNdmw_Z1hd0gr.webp" srcset="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.37.33.BfzhNdmw_ZNIBzN.webp 720w, /interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.37.33.BfzhNdmw_Z1hd0gr.webp 1168w" alt sizes="(max-width: 900px) 92vw, 860px" loading="eager" data-astro-cid-7dbqu7vi="true" decoding="async" width="1168" height="658"></div><div class="prose" lang="ru" data-reveal data-astro-cid-7dbqu7vi><p>Это один из крупных инфраструктурных проектов, который реализуется КТЖ</p>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g></svg></div></section><article class="section flush-top" data-astro-cid-7dbqu7vi><div class="container article" data-astro-cid-7dbqu7vi><div class="cover" data-reveal data-astro-cid-7dbqu7vi><img src="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.37.33.BfzhNdmw_Z1hd0gr.webp" srcset="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.37.33.BfzhNdmw_ZNIBzN.webp 720w, /interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.37.33.BfzhNdmw_Z1hd0gr.webp 1168w" alt sizes="(max-width: 900px) 92vw, 860px" loading="eager" data-astro-cid-7dbqu7vi="true" decoding="async" width="1168" height="658"></div><div class="prose" lang="ru" data-reveal data-astro-cid-7dbqu7vi><p>Это один из крупных инфраструктурных проектов, который реализуется КТЖ</p>
 </div><a class="back" href="/interlog-preview/novosti/" data-astro-cid-7dbqu7vi><svg width="20" height="20" aria-hidden="true" focusable="false" class="back-ic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg> Все новости</a></div></article><section class="section flush-top" aria-labelledby="more-title" data-astro-cid-7dbqu7vi><div class="container" data-astro-cid-7dbqu7vi><h2 id="more-title" class="more-title" data-astro-cid-7dbqu7vi>Другие новости</h2><div class="grid" data-astro-cid-7dbqu7vi><div class="cell" data-astro-cid-7dbqu7vi><article class="nc" data-year="2024" data-astro-cid-r3tkxwmq><a class="nc-link" href="/interlog-preview/novosti/ktzh-gruzovye-perevozki-zaprosili-povyshenie-tarifa-na-lokotyagu-do-35/" data-astro-cid-r3tkxwmq><div class="nc-img" data-astro-cid-r3tkxwmq><img src="/interlog-preview/_astro/snimok-ekrana-2024-06-04-v-15.17.08.CqbLb8f2_Z2hDTpU.webp" srcset="/interlog-preview/_astro/snimok-ekrana-2024-06-04-v-15.17.08.CqbLb8f2_2rNccV.webp 400w, /interlog-preview/_astro/snimok-ekrana-2024-06-04-v-15.17.08.CqbLb8f2_1o08PU.webp 720w" alt sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" loading="lazy" data-astro-cid-r3tkxwmq="true" decoding="async" width="968" height="682"></div><div class="nc-body" data-astro-cid-r3tkxwmq><time class="nc-date mono" datetime="2024-05-27T10:14:53.000Z" data-astro-cid-r3tkxwmq>27 мая 2024</time><!-- тексты новостей пока только на русском --><h3 class="nc-title" lang="ru" data-astro-cid-r3tkxwmq="true">«КТЖ – Грузовые перевозки» запросили повышение тарифа на локотягу до 35%</h3><p class="nc-lead" lang="ru" data-astro-cid-r3tkxwmq>Компания представила на обсуждение регулятора и потребителей новую заявленную смету</p></div></a></article></div><div class="cell" data-astro-cid-7dbqu7vi><article class="nc" data-year="2024" data-astro-cid-r3tkxwmq><a class="nc-link" href="/interlog-preview/novosti/kazahstan-v-globalnoj-logistike-nemeczkaya-rhenus-group-zainteresovana-v-novyh-proektah/" data-astro-cid-r3tkxwmq><div class="nc-img" data-astro-cid-r3tkxwmq><img src="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.35.28.CnkbE7BM_1herr3.webp" srcset="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.35.28.CnkbE7BM_jGmEM.webp 400w, /interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.35.28.CnkbE7BM_2eQLh1.webp 720w" alt sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" loading="lazy" data-astro-cid-r3tkxwmq="true" decoding="async" width="1120" height="610"></div><div class="nc-body" data-astro-cid-r3tkxwmq><time class="nc-date mono" datetime="2024-05-23T10:34:24.000Z" data-astro-cid-r3tkxwmq>23 мая 2024</time><!-- тексты новостей пока только на русском --><h3 class="nc-title" lang="ru" data-astro-cid-r3tkxwmq="true">Казахстан в глобальной логистике: немецкая Rhenus Group заинтересована в новых проектах</h3><p class="nc-lead" lang="ru" data-astro-cid-r3tkxwmq>Премьер-министр Казахстана провел встречу с председателем правления компаний Rhenus Group</p></div></a></article></div><div class="cell" data-astro-cid-7dbqu7vi><article class="nc" data-year="2024" data-astro-cid-r3tkxwmq><a class="nc-link" href="/interlog-preview/novosti/pekinskij-transportnyj-uzel-kak-idet-obustrojstvo-novogo-admczentra-stoliczy-kitaya/" data-astro-cid-r3tkxwmq><div class="nc-img" data-astro-cid-r3tkxwmq><img src="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.30.53.CQL2P_hB_Zns0P4.webp" srcset="/interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.30.53.CQL2P_hB_ZHXYTV.webp 400w, /interlog-preview/_astro/snimok-ekrana-2024-05-27-v-15.30.53.CQL2P_hB_ZKhr2m.webp 720w" alt sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" loading="lazy" data-astro-cid-r3tkxwmq="true" decoding="async" width="1042" height="538"></div><div class="nc-body" data-astro-cid-r3tkxwmq><time class="nc-date mono" datetime="2024-05-22T10:29:59.000Z" data-astro-cid-r3tkxwmq>22 мая 2024</time><!-- тексты новостей пока только на русском --><h3 class="nc-title" lang="ru" data-astro-cid-r3tkxwmq="true">Пекинский транспортный узел: как идет обустройство нового адмцентра столицы Китая</h3><p class="nc-lead" lang="ru" data-astro-cid-r3tkxwmq>К концу 2025 года в Пекине откроют один из крупнейших в Азии подземных транспортных узлов</p></div></a></article></div></div></div></section></main><footer class="ftr band-night" data-astro-cid-jo6i4kqk><div class="ftr-rail" aria-hidden="true" data-astro-cid-jo6i4kqk><svg class="veh ftr-train" viewBox="-2 0 2458 104" data-astro-cid-jo6i4kqk><g transform="translate(0 0)">
-    <rect x="30" y="62" width="6" height="10" fill="#202326"/><rect x="204" y="62" width="6" height="10" fill="#202326"/>
-    <path d="M38 24H202A24 24 0 0 1 202 72H38A24 24 0 0 1 38 24Z" fill="#33373C"/>
-    <path d="M38 24A24 24 0 0 0 38 72H46V24Z" fill="#A3A9AF"/>
-    <path d="M202 24A24 24 0 0 1 202 72H194V24Z" fill="#A3A9AF"/>
-    <path d="M46 30H194V36H46Z" fill="rgb(255 255 255 / .16)"/>
-    <path d="M46 60H194V70H46Z" fill="rgb(0 0 0 / .26)"/>
-    <rect x="46" y="47" width="148" height="3" fill="rgb(255 255 255 / .1)"/>
-    <rect x="108" y="15" width="26" height="9" fill="#2A2E33" rx="2"/><rect x="113" y="11" width="16" height="4" fill="#3A3F44" rx="1.5"/>
-    <path d="M142 15v57M150 15v57" stroke="#7D838A" stroke-width="1.4"/>
-    <rect x="142" y="20" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="28" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="36" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="44" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="52" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="60" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="68" width="8" height="1.2" fill="#7D838A"/>
-    <g transform="translate(62 52) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g><rect x="158" y="36" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="158" y="40" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="158" y="43.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+    <path d="M38 26H202A24 24 0 0 1 202 74H38A24 24 0 0 1 38 26Z"/>
+    <path d="M106 26v-10h28v10M112 16v-4h16v4"/>
+    <path d="M74 26v48M166 26v48" class="thin"/>
+    <path d="M140 16v58M148 16v58M140 24h8M140 32h8M140 40h8M140 48h8M140 56h8M140 64h8"/>
+    <path d="M20 50H220" class="thin"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(246 0)">
-    <rect x="30" y="62" width="6" height="10" fill="#202326"/><rect x="204" y="62" width="6" height="10" fill="#202326"/>
-    <path d="M38 24H202A24 24 0 0 1 202 72H38A24 24 0 0 1 38 24Z" fill="#33373C"/>
-    <path d="M38 24A24 24 0 0 0 38 72H46V24Z" fill="#A3A9AF"/>
-    <path d="M202 24A24 24 0 0 1 202 72H194V24Z" fill="#A3A9AF"/>
-    <path d="M46 30H194V36H46Z" fill="rgb(255 255 255 / .16)"/>
-    <path d="M46 60H194V70H46Z" fill="rgb(0 0 0 / .26)"/>
-    <rect x="46" y="47" width="148" height="3" fill="rgb(255 255 255 / .1)"/>
-    <rect x="108" y="15" width="26" height="9" fill="#2A2E33" rx="2"/><rect x="113" y="11" width="16" height="4" fill="#3A3F44" rx="1.5"/>
-    <path d="M142 15v57M150 15v57" stroke="#7D838A" stroke-width="1.4"/>
-    <rect x="142" y="20" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="28" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="36" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="44" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="52" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="60" width="8" height="1.2" fill="#7D838A"/><rect x="142" y="68" width="8" height="1.2" fill="#7D838A"/>
-    <g transform="translate(62 52) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g><rect x="158" y="36" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="158" y="40" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="158" y="43.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(246 0)">
+    <path d="M38 26H202A24 24 0 0 1 202 74H38A24 24 0 0 1 38 26Z"/>
+    <path d="M106 26v-10h28v10M112 16v-4h16v4"/>
+    <path d="M74 26v48M166 26v48" class="thin"/>
+    <path d="M140 16v58M148 16v58M140 24h8M140 32h8M140 40h8M140 48h8M140 56h8M140 64h8"/>
+    <path d="M20 50H220" class="thin"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(492 0)">
-    <rect x="40" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="90" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="128" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="178" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/>
-    <path d="M14 23H226V56L206 72H184L168 58H72L56 72H34L14 56Z" fill="#4A4F55"/>
-    <rect x="14" y="23" width="212" height="4" fill="#3A3F44"/>
-    <rect x="48" y="27" width="3" height="30" fill="#33383D"/><rect x="48" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="84" y="27" width="3" height="30" fill="#33383D"/><rect x="84" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="120" y="27" width="3" height="30" fill="#33383D"/><rect x="120" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="156" y="27" width="3" height="30" fill="#33383D"/><rect x="156" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="192" y="27" width="3" height="30" fill="#33383D"/><rect x="192" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/>
-    <path d="M14 23H226V30H14Z" fill="rgb(255 255 255 / .13)"/>
-    <path d="M14 50H226V56L206 72H184L168 58H72L56 72H34L14 56Z" fill="rgb(0 0 0 / .26)"/>
-    <path d="M72 58l-8 11M168 58l8 11" stroke="#25292D" stroke-width="2"/>
-    <rect x="24" y="33" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="24" y="37" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="24" y="40.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(132 33) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="206" cy="40" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M202 40h8M206 36v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(492 0)">
+    <path d="M14 24H226V56L206 72H184L168 58H72L56 72H34L14 56Z"/>
+    <path d="M14 30H226"/>
+    <path d="M40 24v-5h22v5M90 24v-5h22v5M128 24v-5h22v5M178 24v-5h22v5"/>
+    <path d="M48 30V58M84 30V58M120 30V58M156 30V58M192 30V58"/>
+    <path d="M72 58l-8 10M168 58l8 10"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(738 0)">
-    <rect x="40" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="90" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="128" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/><rect x="178" y="17" width="22" height="6" fill="#2B2F33" rx="1.5"/>
-    <path d="M14 23H226V56L206 72H184L168 58H72L56 72H34L14 56Z" fill="#4A4F55"/>
-    <rect x="14" y="23" width="212" height="4" fill="#3A3F44"/>
-    <rect x="48" y="27" width="3" height="30" fill="#33383D"/><rect x="48" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="84" y="27" width="3" height="30" fill="#33383D"/><rect x="84" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="120" y="27" width="3" height="30" fill="#33383D"/><rect x="120" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="156" y="27" width="3" height="30" fill="#33383D"/><rect x="156" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/><rect x="192" y="27" width="3" height="30" fill="#33383D"/><rect x="192" y="27" width="0.8" height="30" fill="rgb(255 255 255 / .1)"/>
-    <path d="M14 23H226V30H14Z" fill="rgb(255 255 255 / .13)"/>
-    <path d="M14 50H226V56L206 72H184L168 58H72L56 72H34L14 56Z" fill="rgb(0 0 0 / .26)"/>
-    <path d="M72 58l-8 11M168 58l8 11" stroke="#25292D" stroke-width="2"/>
-    <rect x="24" y="33" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="24" y="37" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="24" y="40.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(132 33) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="206" cy="40" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M202 40h8M206 36v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(738 0)">
+    <path d="M14 24H226V56L206 72H184L168 58H72L56 72H34L14 56Z"/>
+    <path d="M14 30H226"/>
+    <path d="M40 24v-5h22v5M90 24v-5h22v5M128 24v-5h22v5M178 24v-5h22v5"/>
+    <path d="M48 30V58M84 30V58M120 30V58M156 30V58M192 30V58"/>
+    <path d="M72 58l-8 10M168 58l8 10"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(984 0)">
-    <rect x="10" y="28" width="220" height="44" fill="#3D4248"/>
-    <rect x="8" y="26" width="224" height="4" fill="#30353A"/>
-    <rect x="26" y="30" width="3" height="42" fill="#33383D"/><rect x="26" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="49.1" y="30" width="3" height="42" fill="#33383D"/><rect x="49.1" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="72.3" y="30" width="3" height="42" fill="#33383D"/><rect x="72.3" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="95.4" y="30" width="3" height="42" fill="#33383D"/><rect x="95.4" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="118.5" y="30" width="3" height="42" fill="#33383D"/><rect x="118.5" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="141.6" y="30" width="3" height="42" fill="#33383D"/><rect x="141.6" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="164.8" y="30" width="3" height="42" fill="#33383D"/><rect x="164.8" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="187.9" y="30" width="3" height="42" fill="#33383D"/><rect x="187.9" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="211" y="30" width="3" height="42" fill="#33383D"/><rect x="211" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/>
-    <rect x="10" y="49" width="220" height="2.2" fill="#30353A"/>
-    <rect x="10" y="30" width="220" height="6.72" fill="rgb(255 255 255 / .13)"/><rect x="10" y="62.76" width="220" height="9.24" fill="rgb(0 0 0 / .26)"/>
-    <rect x="30" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="53.7" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="77.4" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="101.1" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="124.9" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="148.6" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="172.3" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="196" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/>
-    <rect x="40" y="35" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="40" y="39" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="40" y="42.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(150 35) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="18" cy="40" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M14 40h8M18 36v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(984 0)">
+    <path d="M10 28H230V74H10Z"/>
+    <path d="M8 28H232M10 32H230"/>
+    <path d="M30 32V74M52.5 32V74M75 32V74M97.5 32V74M120 32V74M142.5 32V74M165 32V74M187.5 32V74M210 32V74"/>
+    <path d="M10 52H230" class="thin"/>
+    <path d="M14 34v38M226 34v38"/>
+    <path d="M16 40h6M16 46h6M16 52h6M16 58h6M16 64h6"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(1230 0)">
-    <rect x="10" y="28" width="220" height="44" fill="#3D4248"/>
-    <rect x="8" y="26" width="224" height="4" fill="#30353A"/>
-    <rect x="26" y="30" width="3" height="42" fill="#33383D"/><rect x="26" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="49.1" y="30" width="3" height="42" fill="#33383D"/><rect x="49.1" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="72.3" y="30" width="3" height="42" fill="#33383D"/><rect x="72.3" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="95.4" y="30" width="3" height="42" fill="#33383D"/><rect x="95.4" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="118.5" y="30" width="3" height="42" fill="#33383D"/><rect x="118.5" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="141.6" y="30" width="3" height="42" fill="#33383D"/><rect x="141.6" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="164.8" y="30" width="3" height="42" fill="#33383D"/><rect x="164.8" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="187.9" y="30" width="3" height="42" fill="#33383D"/><rect x="187.9" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/><rect x="211" y="30" width="3" height="42" fill="#33383D"/><rect x="211" y="30" width="0.8" height="42" fill="rgb(255 255 255 / .1)"/>
-    <rect x="10" y="49" width="220" height="2.2" fill="#30353A"/>
-    <rect x="10" y="30" width="220" height="6.72" fill="rgb(255 255 255 / .13)"/><rect x="10" y="62.76" width="220" height="9.24" fill="rgb(0 0 0 / .26)"/>
-    <rect x="30" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="53.7" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="77.4" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="101.1" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="124.9" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="148.6" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="172.3" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/><rect x="196" y="64" width="16" height="6" fill="rgb(0 0 0 / .22)"/>
-    <rect x="40" y="35" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="40" y="39" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="40" y="42.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(150 35) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="18" cy="40" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M14 40h8M18 36v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(1230 0)">
+    <path d="M10 28H230V74H10Z"/>
+    <path d="M8 28H232M10 32H230"/>
+    <path d="M30 32V74M52.5 32V74M75 32V74M97.5 32V74M120 32V74M142.5 32V74M165 32V74M187.5 32V74M210 32V74"/>
+    <path d="M10 52H230" class="thin"/>
+    <path d="M14 34v38M226 34v38"/>
+    <path d="M16 40h6M16 46h6M16 52h6M16 58h6M16 64h6"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(1476 0)">
-    <path d="M12 21Q120 15.5 228 21Z" fill="#30353A"/>
-    <rect x="7" y="20" width="226" height="3" fill="#25292D"/>
-    <rect x="10" y="23" width="220" height="49" fill="#454A50"/>
-    <rect x="17" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="17" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="28" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="28" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="39" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="39" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="50" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="50" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="61" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="61" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="72" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="72" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="83" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="83" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="157" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="157" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="168" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="168" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="179" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="179" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="190" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="190" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="201" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="201" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="212" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="212" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="223" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="223" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/>
-    <rect x="10" y="23" width="4" height="49" fill="#363B40"/><rect x="226" y="23" width="4" height="49" fill="#363B40"/>
-    <rect x="10" y="47" width="78" height="1.6" fill="#383D42"/><rect x="152" y="47" width="78" height="1.6" fill="#383D42"/>
-    <rect x="84" y="22.5" width="72" height="2.2" fill="#202326"/><rect x="84" y="70" width="72" height="2.4" fill="#202326"/>
-    <rect x="90" y="25" width="60" height="45" fill="#4D5258"/>
-    <rect x="95" y="27" width="1.8" height="41" fill="#40454B"/><rect x="103.8" y="27" width="1.8" height="41" fill="#40454B"/><rect x="112.6" y="27" width="1.8" height="41" fill="#40454B"/><rect x="121.4" y="27" width="1.8" height="41" fill="#40454B"/><rect x="130.2" y="27" width="1.8" height="41" fill="#40454B"/><rect x="139" y="27" width="1.8" height="41" fill="#40454B"/>
-    <rect x="90" y="36" width="60" height="1.6" fill="#3B4045"/><rect x="90" y="58" width="60" height="1.6" fill="#3B4045"/>
-    <rect x="90" y="25" width="60" height="45" fill="none" stroke="#2A2E33" stroke-width="1.2"/>
-    <rect x="143" y="28" width="2.4" height="40" fill="#26292D"/><rect x="141" y="44" width="7" height="3" fill="#9AA0A6" rx="1"/>
-    <rect x="10" y="23" width="220" height="7.84" fill="rgb(255 255 255 / .13)"/><rect x="10" y="61.22" width="220" height="10.78" fill="rgb(0 0 0 / .26)"/>
-    <rect x="22" y="52" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="22" y="56" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="22" y="59.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(162 30) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="20" cy="34" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M16 34h8M20 30v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(1476 0)">
+    <path d="M10 20H230V74H10Z"/>
+    <path d="M10 20Q120 6 230 20"/>
+    <path d="M98 26h44v46H98z"/><path d="M120 26v46"/>
+    <path d="M92 24h56M92 74h56"/>
+    <path d="M114 46h3M123 46h3"/>
+    <path d="M30 20V74M50 20V74M70 20V74M170 20V74M190 20V74M210 20V74"/>
+    <path d="M10 48H92M148 48H230" class="thin"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(1722 0)">
-    <rect x="8" y="64" width="224" height="9" fill="#2A2E32"/>
-    <rect x="8" y="64" width="224" height="1.2" fill="rgb(255 255 255 / .14)"/>
-    
-      <rect x="12" y="22" width="105" height="42" fill="#2E4A6B"/>
-      <rect x="18" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="24.2" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="30.4" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="36.6" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="42.8" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="49" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="55.2" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="61.4" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="67.6" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="73.8" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="80" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="86.2" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="92.4" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="98.6" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="104.8" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="111" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/>
-      <rect x="12" y="22" width="105" height="6" fill="rgb(255 255 255 / .12)"/><rect x="12" y="55" width="105" height="9" fill="rgb(0 0 0 / .26)"/>
-      <rect x="12" y="22" width="4" height="4" fill="#1E2124"/><rect x="113" y="22" width="4" height="4" fill="#1E2124"/><rect x="12" y="60" width="4" height="4" fill="#1E2124"/><rect x="113" y="60" width="4" height="4" fill="#1E2124"/>
-      <g transform="translate(42 38) scale(1.05)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-      <rect x="123" y="22" width="105" height="42" fill="#3A4E64"/>
-      <rect x="129" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="135.2" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="141.4" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="147.6" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="153.8" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="160" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="166.2" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="172.4" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="178.6" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="184.8" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="191" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="197.2" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="203.4" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="209.6" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="215.8" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/><rect x="222" y="25" width="1.4" height="36" fill="rgb(0 0 0 / .18)"/>
-      <rect x="123" y="22" width="105" height="6" fill="rgb(255 255 255 / .12)"/><rect x="123" y="55" width="105" height="9" fill="rgb(0 0 0 / .26)"/>
-      <rect x="123" y="22" width="4" height="4" fill="#1E2124"/><rect x="224" y="22" width="4" height="4" fill="#1E2124"/><rect x="123" y="60" width="4" height="4" fill="#1E2124"/><rect x="224" y="60" width="4" height="4" fill="#1E2124"/>
-      <g transform="translate(153 38) scale(1.05)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(1722 0)">
+    <path d="M10 64H230V76H10Z"/>
+    <path d="M22 64V76M50 64V76M78 64V76M106 64V76M134 64V76M162 64V76M190 64V76M218 64V76"/>
+    <path d="M14 22H117V64H14Z"/><path d="M123 22H226V64H123Z"/>
+    <path d="M24 25V61M35.9 25V61M47.7 25V61M59.6 25V61M71.4 25V61M83.3 25V61M95.1 25V61M107 25V61"/>
+    <path d="M133 25V61M145.6 25V61M158.2 25V61M170.8 25V61M183.4 25V61M196 25V61"/>
+    <path d="M206 24v38M216 24v38M203 38h6M213 38h6"/>
+    <path d="M14 22h5v5h-5zM112 22h5v5h-5zM123 22h5v5h-5zM221 22h5v5h-5z"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(1968 0)">
-    <path d="M12 21Q120 15.5 228 21Z" fill="#30353A"/>
-    <rect x="7" y="20" width="226" height="3" fill="#25292D"/>
-    <rect x="10" y="23" width="220" height="49" fill="#454A50"/>
-    <rect x="17" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="17" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="28" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="28" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="39" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="39" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="50" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="50" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="61" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="61" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="72" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="72" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="83" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="83" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="157" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="157" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="168" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="168" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="179" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="179" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="190" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="190" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="201" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="201" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="212" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="212" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/><rect x="223" y="24" width="2.6" height="47" fill="#3A3F44"/><rect x="223" y="24" width="0.8" height="47" fill="rgb(255 255 255 / .09)"/>
-    <rect x="10" y="23" width="4" height="49" fill="#363B40"/><rect x="226" y="23" width="4" height="49" fill="#363B40"/>
-    <rect x="10" y="47" width="78" height="1.6" fill="#383D42"/><rect x="152" y="47" width="78" height="1.6" fill="#383D42"/>
-    <rect x="84" y="22.5" width="72" height="2.2" fill="#202326"/><rect x="84" y="70" width="72" height="2.4" fill="#202326"/>
-    <rect x="90" y="25" width="60" height="45" fill="#4D5258"/>
-    <rect x="95" y="27" width="1.8" height="41" fill="#40454B"/><rect x="103.8" y="27" width="1.8" height="41" fill="#40454B"/><rect x="112.6" y="27" width="1.8" height="41" fill="#40454B"/><rect x="121.4" y="27" width="1.8" height="41" fill="#40454B"/><rect x="130.2" y="27" width="1.8" height="41" fill="#40454B"/><rect x="139" y="27" width="1.8" height="41" fill="#40454B"/>
-    <rect x="90" y="36" width="60" height="1.6" fill="#3B4045"/><rect x="90" y="58" width="60" height="1.6" fill="#3B4045"/>
-    <rect x="90" y="25" width="60" height="45" fill="none" stroke="#2A2E33" stroke-width="1.2"/>
-    <rect x="143" y="28" width="2.4" height="40" fill="#26292D"/><rect x="141" y="44" width="7" height="3" fill="#9AA0A6" rx="1"/>
-    <rect x="10" y="23" width="220" height="7.84" fill="rgb(255 255 255 / .13)"/><rect x="10" y="61.22" width="220" height="10.78" fill="rgb(0 0 0 / .26)"/>
-    <rect x="22" y="52" width="16" height="2.2" fill="rgb(255 255 255 / .78)"/><rect x="22" y="56" width="26" height="1.6" fill="rgb(255 255 255 / .78)"/><rect x="22" y="59.4" width="12" height="1.6" fill="rgb(255 255 255 / .78)"/><g transform="translate(162 30) scale(0.95)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="20" cy="34" r="4" fill="none" stroke="#D7262F" stroke-width="1.6"/><path d="M16 34h8M20 30v8" stroke="#D7262F" stroke-width="1"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(1968 0)">
+    <path d="M10 20H230V74H10Z"/>
+    <path d="M10 20Q120 6 230 20"/>
+    <path d="M98 26h44v46H98z"/><path d="M120 26v46"/>
+    <path d="M92 24h56M92 74h56"/>
+    <path d="M114 46h3M123 46h3"/>
+    <path d="M30 20V74M50 20V74M70 20V74M170 20V74M190 20V74M210 20V74"/>
+    <path d="M10 48H92M148 48H230" class="thin"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g><g transform="translate(2214 0)">
-    <rect x="30" y="18" width="52" height="7" fill="#4A4F55" rx="2"/><rect x="104" y="19" width="50" height="6" fill="#4A4F55" rx="2"/>
-    <path d="M24 18l7-6M64 18l-7-6" stroke="#2B2F33" stroke-width="1.6"/>
-    <path d="M8 25H192L224 40V72H8Z" fill="#E9ECEF"/>
-    <path d="M8 50H224V72H8Z" fill="#D7262F"/>
-    <path d="M8 46H224V50H8Z" fill="#B71C24"/>
-    <path d="M192 25L224 40V50H192Z" fill="#DADEE2"/>
-    <path d="M196 30L218 41V48H196Z" fill="#1B2430"/>
-    <path d="M198 32l6 3v11h-6z" fill="rgb(255 255 255 / .25)"/>
-    <rect x="166" y="30" width="20" height="14" fill="#1B2430" rx="1.5"/><rect x="168" y="31.5" width="5" height="11" fill="rgb(255 255 255 / .22)"/>
-    <rect x="16" y="30" width="18" height="13" fill="#2A2F35" rx="1"/><rect x="40" y="30" width="14" height="13" fill="#2A2F35" rx="1"/>
-    <rect x="62" y="31" width="3" height="12" fill="#2C3137"/><rect x="70" y="31" width="3" height="12" fill="#2C3137"/><rect x="78" y="31" width="3" height="12" fill="#2C3137"/><rect x="86" y="31" width="3" height="12" fill="#2C3137"/><rect x="94" y="31" width="3" height="12" fill="#2C3137"/><rect x="102" y="31" width="3" height="12" fill="#2C3137"/><rect x="110" y="31" width="3" height="12" fill="#2C3137"/><rect x="118" y="31" width="3" height="12" fill="#2C3137"/><rect x="126" y="31" width="3" height="12" fill="#2C3137"/><rect x="134" y="31" width="3" height="12" fill="#2C3137"/><rect x="142" y="31" width="3" height="12" fill="#2C3137"/><rect x="150" y="31" width="3" height="12" fill="#2C3137"/>
-    <rect x="8" y="25" width="216" height="2" fill="rgb(255 255 255 / .6)"/>
-    <rect x="8" y="66" width="216" height="6" fill="rgb(0 0 0 / .26)"/>
-    <g transform="translate(70 55) scale(1.05)" fill="#fff">
-  <rect x="0" y="4" width="2.2" height="5"/><rect x="3" y="2" width="2.2" height="7"/><rect x="6" y="0" width="2.2" height="9"/>
-  <text x="11" y="8.6" font-family="Geologica Variable, Geologica, sans-serif" font-weight="600" font-size="10" letter-spacing="-.2">interlog</text>
-</g>
-    <circle cx="221" cy="58" r="3" fill="#FFE59A"/><circle cx="221" cy="58" r="7" fill="#FFE59A" opacity=".25"/>
-    <circle cx="13" cy="58" r="2.2" fill="#FF6B6B"/>
-  <rect x="8" y="72" width="224" height="6" fill="#202326"/>
-  <rect x="8" y="72" width="224" height="1" fill="rgb(255 255 255 / .22)"/>
-  <rect x="0" y="72.5" width="10" height="5" fill="#202326"/><rect x="230" y="72.5" width="10" height="5" fill="#202326"/>
-  <rect x="96" y="78" width="48" height="5" fill="#2A2E32" rx="2"/>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g><g transform="translate(2214 0)">
+    <path d="M10 26H196L224 40V76H10Z"/>
+    <path d="M200 33L218 42V54H200Z"/>
+    <path d="M14 34h20v14H14z"/><path d="M40 34h16v14H40z"/>
+    <path d="M64 33h116M64 39h116M64 45h116"/>
+    <path d="M30 26v-7h56v7M104 26v-5h48v5"/>
+    <path d="M22 19l8-6M68 19l-8-6"/>
+    <path class="acc" d="M10 62H224"/>
+    <path d="M10 68H224"/>
+  <path d="M10 76H230"/>
+  <path d="M2 72h8v6H2zM230 72h8v6h-8z"/>
+  <path d="M0 73.5h2M238 73.5h2"/>
   
-  <g class="wheel">
-  <circle cx="36" cy="90" r="10" fill="#26292D"/>
-  <circle cx="36" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="36" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="36" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="68" cy="90" r="10" fill="#26292D"/>
-  <circle cx="68" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="68" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="68" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M32 86L43 77H61L72 86L68 90H36Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="31" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="63" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="46" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M49 79.5v6M52 79.5v6M55 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/>
-  <g class="wheel">
-  <circle cx="172" cy="90" r="10" fill="#26292D"/>
-  <circle cx="172" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="172" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="172" cy="96" r="1.5" fill="#111"/>
-</g><g class="wheel">
-  <circle cx="204" cy="90" r="10" fill="#26292D"/>
-  <circle cx="204" cy="90" r="8.4" fill="none" stroke="#6E747B" stroke-width="1.4"/>
-  <circle cx="204" cy="90" r="3.2" fill="#9AA0A6"/>
-  <circle cx="204" cy="96" r="1.5" fill="#111"/>
-</g>
-  <path d="M168 86L179 77H197L208 86L204 90H172Z" fill="#1B1E21" stroke="rgb(255 255 255 / .16)" stroke-width=".8"/>
-  <rect x="167" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/><rect x="199" y="86" width="10" height="7" fill="#2C3035" rx="1.5"/>
-  <rect x="182" y="78" width="12" height="9" fill="#3A3F44" rx="1"/>
-  <path d="M185 79.5v6M188 79.5v6M191 79.5v6" stroke="#9AA0A6" stroke-width="1.1"/></g></svg></div><div class="container" data-astro-cid-jo6i4kqk><div class="ftr-card" data-astro-cid-jo6i4kqk><div class="ftr-grid" data-astro-cid-jo6i4kqk><div class="ftr-brand" data-astro-cid-jo6i4kqk><a href="/interlog-preview/" data-astro-cid-jo6i4kqk><img src="/interlog-preview/_astro/logo.CyCUZ8S5_Z1uQdu1.webp" alt="Interlog multimodal" data-astro-cid-jo6i4kqk="true" loading="lazy" decoding="async" width="160" height="49" class="ftr-logo"></a><a class="ftr-phone mono" href="tel:+77172576741" data-astro-cid-jo6i4kqk>+7 (7172) 57-67-41</a></div><div class="ftr-cols" data-astro-cid-jo6i4kqk><nav class="ftr-nav" aria-label="Услуги" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Услуги</p><a href="/interlog-preview/perevozka-gruzov/" data-astro-cid-jo6i4kqk>Перевозка грузов</a><a href="/interlog-preview/ekspedirovanie-gruzov/" data-astro-cid-jo6i4kqk>Экспедирование</a><a href="/interlog-preview/arenda-vagonov/" data-astro-cid-jo6i4kqk>Аренда вагонов</a><a href="/interlog-preview/park-vagonov/" data-astro-cid-jo6i4kqk>Парк вагонов</a><a href="/interlog-preview/geografiya/" data-astro-cid-jo6i4kqk>География</a><a href="/interlog-preview/inkoterms-2020/" data-astro-cid-jo6i4kqk>Инкотермс 2020</a></nav><nav class="ftr-nav" aria-label="Компания" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Компания</p><a href="/interlog-preview/o-kompanii/" data-astro-cid-jo6i4kqk>О компании</a><a href="/interlog-preview/klienty/" data-astro-cid-jo6i4kqk>Клиенты и партнёры</a><a href="/interlog-preview/novosti/" data-astro-cid-jo6i4kqk>Новости</a><a href="/interlog-preview/vakansii/" data-astro-cid-jo6i4kqk>Вакансии</a><a href="/interlog-preview/kontakty/" data-astro-cid-jo6i4kqk>Контакты</a></nav></div></div><div class="ftr-bottom" data-astro-cid-jo6i4kqk><span data-astro-cid-jo6i4kqk>© 2026 ТОО «Interlog multimodal»</span></div></div></div></footer></body></html><script type="module" src="/interlog-preview/_astro/Page.astro_astro_type_script_index_0_lang.JSqnedFr.js"></script>
+  <path d="M22 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="45" y="77" width="14" height="10"/>
+  <path d="M48 79v6M52 79v6M56 79v6"/>
+  <g class="wheel"><circle cx="36" cy="90" r="10"/><circle cx="36" cy="90" r="3.2"/><path d="M26 90h20"/></g><g class="wheel"><circle cx="68" cy="90" r="10"/><circle cx="68" cy="90" r="3.2"/><path d="M58 90h20"/></g>
+  <path d="M158 84l7-8h46l7 8l-7 6h-46z"/>
+  <rect x="181" y="77" width="14" height="10"/>
+  <path d="M184 79v6M188 79v6M192 79v6"/>
+  <g class="wheel"><circle cx="172" cy="90" r="10"/><circle cx="172" cy="90" r="3.2"/><path d="M162 90h20"/></g><g class="wheel"><circle cx="204" cy="90" r="10"/><circle cx="204" cy="90" r="3.2"/><path d="M194 90h20"/></g></g></svg></div><div class="container" data-astro-cid-jo6i4kqk><div class="ftr-card" data-astro-cid-jo6i4kqk><div class="ftr-grid" data-astro-cid-jo6i4kqk><div class="ftr-brand" data-astro-cid-jo6i4kqk><a href="/interlog-preview/" data-astro-cid-jo6i4kqk><img src="/interlog-preview/_astro/logo.CyCUZ8S5_Z1uQdu1.webp" alt="Interlog multimodal" data-astro-cid-jo6i4kqk="true" loading="lazy" decoding="async" width="160" height="49" class="ftr-logo"></a><a class="ftr-phone mono" href="tel:+77172576741" data-astro-cid-jo6i4kqk>+7 (7172) 57-67-41</a></div><div class="ftr-cols" data-astro-cid-jo6i4kqk><nav class="ftr-nav" aria-label="Услуги" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Услуги</p><a href="/interlog-preview/perevozka-gruzov/" data-astro-cid-jo6i4kqk>Перевозка грузов</a><a href="/interlog-preview/ekspedirovanie-gruzov/" data-astro-cid-jo6i4kqk>Экспедирование</a><a href="/interlog-preview/arenda-vagonov/" data-astro-cid-jo6i4kqk>Аренда вагонов</a><a href="/interlog-preview/park-vagonov/" data-astro-cid-jo6i4kqk>Парк вагонов</a><a href="/interlog-preview/geografiya/" data-astro-cid-jo6i4kqk>География</a><a href="/interlog-preview/inkoterms-2020/" data-astro-cid-jo6i4kqk>Инкотермс 2020</a></nav><nav class="ftr-nav" aria-label="Компания" data-astro-cid-jo6i4kqk><p class="ftr-title" data-astro-cid-jo6i4kqk>Компания</p><a href="/interlog-preview/o-kompanii/" data-astro-cid-jo6i4kqk>О компании</a><a href="/interlog-preview/klienty/" data-astro-cid-jo6i4kqk>Клиенты и партнёры</a><a href="/interlog-preview/novosti/" data-astro-cid-jo6i4kqk>Новости</a><a href="/interlog-preview/vakansii/" data-astro-cid-jo6i4kqk>Вакансии</a><a href="/interlog-preview/kontakty/" data-astro-cid-jo6i4kqk>Контакты</a></nav></div></div><div class="ftr-bottom" data-astro-cid-jo6i4kqk><span data-astro-cid-jo6i4kqk>© 2026 ТОО «Interlog multimodal»</span></div></div></div></footer></body></html><script type="module" src="/interlog-preview/_astro/Page.astro_astro_type_script_index_0_lang.JSqnedFr.js"></script>
